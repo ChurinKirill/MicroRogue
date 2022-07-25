@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE3B461D-0E73-4E37-8AF6-FB05E7380655}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MicroRogue.Core</RootNamespace>
+    <AssemblyName>MicroRogue.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI\AI.cs" />
+    <Compile Include="AI\Dummy.cs" />
+    <Compile Include="AI\Roach.cs" />
+    <Compile Include="AI\Seeker.cs" />
+    <Compile Include="Floor.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Menu\ActionType.cs" />
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Menu\MenuAction.cs" />
+    <Compile Include="Menu\MenuActions\ContinueAction.cs" />
+    <Compile Include="Menu\MenuActions\ExitAction.cs" />
+    <Compile Include="Menu\MenuActions\ExitGameAction.cs" />
+    <Compile Include="Menu\MenuActions\QuickLoadAction.cs" />
+    <Compile Include="Menu\MenuActions\QuickSaveAction.cs" />
+    <Compile Include="Menu\MenuActions\StartDemoAction.cs" />
+    <Compile Include="Menu\MenuItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveObjects\AI.cs" />
+    <Compile Include="SaveObjects\Dummy.cs" />
+    <Compile Include="SaveObjects\Floor.cs" />
+    <Compile Include="SaveObjects\Game.cs" />
+    <Compile Include="SaveObjects\Roach.cs" />
+    <Compile Include="SaveObjects\Scene.cs" />
+    <Compile Include="SaveObjects\Seeker.cs" />
+    <Compile Include="SaveObjects\Tile.cs" />
+    <Compile Include="SaveObjects\Unit.cs" />
+    <Compile Include="SaveObjects\Wall.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="Wall.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

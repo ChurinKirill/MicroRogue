@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRogue.Console", "MicroRogue\MicroRogue.Console.csproj", "{91FF4D3A-F4FE-4086-B8A0-391F532E3733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRogue.Core", "MicroRouge.Core\MicroRogue.Core.csproj", "{EE3B461D-0E73-4E37-8AF6-FB05E7380655}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91FF4D3A-F4FE-4086-B8A0-391F532E3733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91FF4D3A-F4FE-4086-B8A0-391F532E3733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91FF4D3A-F4FE-4086-B8A0-391F532E3733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91FF4D3A-F4FE-4086-B8A0-391F532E3733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE3B461D-0E73-4E37-8AF6-FB05E7380655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3B461D-0E73-4E37-8AF6-FB05E7380655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3B461D-0E73-4E37-8AF6-FB05E7380655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3B461D-0E73-4E37-8AF6-FB05E7380655}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
